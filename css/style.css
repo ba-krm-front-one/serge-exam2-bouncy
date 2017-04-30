@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+body {
+  margin: 0; }
+
+.ba-container {
+  background: url("../assets/bckground-header.jpg") 100% no-repeat;
+  background-size: cover;
+  display: block;
+  min-width: 500px;
+  height: 737px;
+  margin: 0;
+  color: #fffefe;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; }
+  .ba-container__logo {
+    display: block;
+    float: left;
+    margin: 50px 0 0 215px; }
+  .ba-container__title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 70px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-top: 290px;
+    padding-left: 35px;
+    margin: 0 auto; }
+  .ba-container__under-title {
+    color: #ffffff;
+    line-height: 28px;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    white-space: pre;
+    margin-bottom: 160px; }
+
+.navigation-menu {
+  margin-right: 285px;
+  float: right;
+  display: block; }
+  .navigation-menu__item {
+    padding-right: 10px;
+    margin-top: 35px;
+    display: inline-block; }
+  .navigation-menu__link {
+    text-decoration: none;
+    color: #fffefe;
+    text-transform: uppercase;
+    padding: 5px;
+    display: inline-block; }
+    .navigation-menu__link:hover {
+      color: #11BE9B;
+      transition: 1.1s;
+      transform: scale(1.1);
+      display: inline-block; }
+
+#anchor-to-portfolio {
+  display: block;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0.2;
+  margin: 0 auto; }
+  #anchor-to-portfolio:hover {
+    display: block;
+    transition: 1.2s;
+    opacity: 0.8;
+    background-color: #11BE9B; }
+
+.anchor-string {
+  display: block;
+  text-align: center;
+  position: absolute; }
+
+/*-------------MASONRY, ISOTOPE---------*/
+.isotope-container {
+  height: 1406px;
+  background-color: #F3F3F3;
+  display: block; }
+
+.filter {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px 0; }
+
+.filter-btn {
+  border: 2px solid #11BE9B;
+  color: white;
+  background-color: rgba(55, 55, 82, 0.31);
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 25px;
+  display: inline-block; }
+
+.filter-btn:hover {
+  transition: 0.8s;
+  background-color: rgba(53, 37, 26, 0.85);
+  transform: scale(1.1); }
+
+.grid {
+  display: block;
+  margin: 0 auto;
+  max-width: 1110px; }
+
+.sizer {
+  width: 25%; }
+
+.grid-item {
+  width: 270px;
+  padding-bottom: 6px; }
+
+/*_______main-used banner*/
+.banner {
+  height: 185px;
+  margin-top: -17px;
+  text-align: center; }
+  .banner__title {
+    color: #333b46;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    display: block; }
+  .banner__description {
+    color: #81868e;
+    font-size: 14px;
+    line-height: 25px; }
+
+/*-------SLIDER-------*/
+.gallery-cell {
+  width: 1030px;
+  height: 370px; }
+
+.man {
+  position: absolute; }
+
+.text-in-team-slider {
+  text-align: right;
+  color: #81868e;
+  display: block;
+  float: right;
+  width: 370px;
+  height: 370px;
+  padding-right: 25px; }
+
+.slider-pic {
+  width: 830px;
+  height: 370px; }
+
+/*-------CONTACT--------*/
+.contact {
+  background: url("../assets/already.png") 100%, no-repeat;
+  color: white;
+  text-align: center;
+  height: 201px; }
+
+/*-----------MAP-------------*/
+.google-map {
+  height: 400px;
+  margin: 0 auto; }
+
+/*-------------FOOTER-------------*/
+.social-container {
+  height: 250px; }
+  .social-container__bouncy {
+    margin: 0 auto;
+    display: block;
+    padding-top: 70px; }
+  .social-container__copyright {
+    color: #81868e;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center; }
+
+.social-links {
+  display: block;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 40px; }
+  .social-links__item {
+    display: inline-block;
+    margin-left: 25px; }
+  .social-links__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px; }
+    .social-links__icon:hover {
+      transform: scale(1.3);
+      transition: 0.8s; }
