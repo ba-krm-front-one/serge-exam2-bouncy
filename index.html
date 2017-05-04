@@ -20,22 +20,22 @@
 <header class="ba-container">
         <img class="ba-container__logo" src="assets/bouncy-logo.svg" alt="#">
         <ul class="navigation-menu">
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">hello</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">portfolio</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">team</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">contact</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Hello</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Portfolio</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Team</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Contact</a></li>
         </ul>
         <h1 class="ba-container__title">we are code cafe</h1>
         <p class="ba-container__under-title">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium voluptatum
         </p>
-        <a href="#isotope">
+        <a href="#the-portfolio">
             <img id="anchor-to-portfolio" src="assets/downbutton.png" alt="down-to-app">
         </a>
 </header>
 <main>
-    <div class="isotope-container" id="isotope">
+    <div class="isotope-container" id="the-portfolio">
         <div class="banner">
         <h2 class="banner__title">The portfolio</h2>
         <h4 class="banner__description">
@@ -44,11 +44,11 @@
         </h4>
         </div>
         <div class="filter">
-            <a class="active filter-btn" href="#" data-filter="*">All Works</a>
-            <a class="filter-btn" href="#" data-filter=".print">Print</a>
-            <a class="filter-btn" href="#" data-filter=".brand">Branding</a>
-            <a class="filter-btn" href="#" data-filter=".web">Web</a>
-            <a class="filter-btn" href="#" data-filter=".html">HTML</a>
+            <a class="active filter-button" href="#" data-filter="*">All Works</a>
+            <a class="filter-button" href="#" data-filter=".print">Print</a>
+            <a class="filter-button" href="#" data-filter=".brand">Branding</a>
+            <a class="filter-button" href="#" data-filter=".web">Web</a>
+            <a class="filter-button" href="#" data-filter=".html">HTML</a>
         </div>
         <div class="grid">
             <div class="sizer"></div>
@@ -75,18 +75,20 @@
         </div>
     </div>
 </main>
-<section>
     <div class="banner">
         <h2 class="banner__title">The team</h2>
         <h4 class="banner__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium</h4>
     </div>
-    <div class="main-gallery"> <!--SLIDER 1 -->
-        <div class="gallery-cell size">
-            <img class="man" src="assets/man-slider1.png" alt="">
-            <div class="text-in-team-slider">
-            <h3>Abdullah Noman</h3>
-            <h5>Creative Director, Code Cafe</h5>
+<section class="team-description">
+    <div class="the-team"> <!--SLIDER 1 -->
+        <div class="the-team__gallery-cell">
+            <img class="the-team__man" src="assets/man-slider1.png" alt="">
+            <div class="the-team__text-in-team-slider">
+                <div class="the-team__who-is-it">
+                    <h3>Abdullah Noman</h3>
+                    <h5>Creative Director, Code Cafe</h5>
+                </div>
             <p>At vero eos et accusamus et iusto odio dignissimos
                 ducimus qui blanditiis praesentium. At vero eos et
                 accusamus et iusto odio dignissimos ducimus qui
@@ -99,13 +101,38 @@
             </p>
             </div>
         </div>
-        <div class="gallery-cell size"><img class="slider-pic" src="assets/Best6.JPG" alt=""></div>
-        <div class="gallery-cell size"><img class="slider-pic" src="assets/Best9.jpg" alt=""></div>
+        <div class="the-team__gallery-cell"><img class="the-team__slider-pic" src="assets/acessories.jpg" alt=""></div>
+        <div class="the-team__gallery-cell"><img class="the-team__slider-pic" src="assets/aces2.jpg" alt=""></div>
     </div>
 </section>
 <section class="contact">
-    <h3>Already Loved Us? Let’s talk!</h3>
-    <a href="">Contact us</a>
+    <h3 class="contact__item">Already Loved Us? Let’s talk!</h3>
+    <a  class="contact__link" href="#">Contact us</a>
+</section>
+<section class="testimonials">
+<div class="banner">
+    <h2 class="banner__title">Testimonials</h2>
+    <h4 class="banner__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+        blanditiis praesentium</h4>
+</div>
+<div class="karusel">
+    <div class="karusel__karusel-cell">
+        <img class="karusel__ramanujan" src="assets/ramanujan.png" alt="">
+        <div class="karusel__inner-text">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+            <h3>PARTHO</h3>
+            <h4>FOUNDER, ARTWAYS BD</h4>
+        </div>
+    </div>
+    <div class="karusel__karusel-cell">
+        <img class="karusel__feedback" src="assets/feed1.jpg" alt="">
+    </div>
+    <div class="karusel__karusel-cell">
+        <img class="karusel__feedback" src="assets/feed2.jpg" alt="">
+    </div>
+</div>
 </section>
 <address>
     <div class="banner">
@@ -128,8 +155,13 @@
 </footer>
 <script src="js/main.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
 <script src="js/slider.js" defer></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
+
+<!--
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js" defer></script>
+-->
+<script src="js/slider2.js" defer></script>
 <script src="js/map.js" defer></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBzivyiXOgLjv-MaKuJkjNl5kk3dchM4c&callback=initMap"async defer></script>
 </body>

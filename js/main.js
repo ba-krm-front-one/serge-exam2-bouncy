@@ -27,7 +27,7 @@
             this.classList.add('active');
         };
 
-        document.querySelectorAll('.filter-btn').forEach(filterBtn => {
+        document.querySelectorAll('.filter-button').forEach(filterBtn => {
             filterBtn.addEventListener( 'click', filterGrid);
         });
 

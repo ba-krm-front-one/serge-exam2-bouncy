@@ -1,6 +1,6 @@
-let flkty = new Flickity( '.the-team', {
+let flikty = new Flickity( '.karusel', {
     // Настройки плагина
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: true,
     wrapAround: true,
     autoPlay: 4000
