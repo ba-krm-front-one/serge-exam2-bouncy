@@ -25,10 +25,10 @@
         };
     }());
     document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.ba-header__link').forEach((scrollLink) => {
+        document.querySelector('#anchor-to-portfolio').forEach((scrollLink) => {
             scrollLink.addEventListener('click', (event) => {
-                let anchor = scrollLink.getAttribute('href');
-                let anchorTo = document.querySelector(anchor);
+                let anchor = scrollLink.getAttribute('id');
+                let anchorTo = document.querySelector('the-portfolio');
                 event.preventDefault();
                 smoothScrollTo(anchorTo.offsetTop, 2000);
             });
