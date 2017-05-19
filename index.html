@@ -20,17 +20,17 @@
 <header class="ba-container">
         <img class="ba-container__logo" src="assets/bouncy-logo.svg" alt="#">
         <ul class="navigation-menu">
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Hello</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Portfolio</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Team</a></li>
-            <li class="navigation-menu__item"><a class="navigation-menu__link" href="">Contact</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link scroll" href="">Hello</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link scroll" href="#the-portfolio">Portfolio</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link scroll" href="#the-team">Team</a></li>
+            <li class="navigation-menu__item"><a class="navigation-menu__link scroll" href="#contact">Contact</a></li>
         </ul>
         <h1 class="ba-container__title">we are code cafe</h1>
         <p class="ba-container__under-title">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
             praesentium voluptatum
         </p>
-        <a href="#the-portfolio">
+        <a href="#the-portfolio" class="scroll">
             <img id="anchor-to-portfolio" src="assets/downbutton.png" alt="down-to-app">
         </a>
 </header>
@@ -75,7 +75,7 @@
         </div>
     </div>
 </main>
-    <div class="banner">
+    <div class="banner" id="the-team">
         <h2 class="banner__title">The team</h2>
         <h4 class="banner__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium</h4>
@@ -105,7 +105,7 @@
         <div class="the-team__gallery-cell"><img class="the-team__slider-pic" src="assets/aces2.jpg" alt=""></div>
     </div>
 </section>
-<section class="contact">
+<section id="contact" class="contact">
     <h3 class="contact__item">Already Loved Us? Let’s talk!</h3>
     <a  class="contact__link" href="#">Contact us</a>
 </section>
@@ -153,6 +153,7 @@
             <li class="social-links__item"><a  href="https://www.vimeo.com/" ><img class="social-links__icon" src="assets/social/vimeo.svg" alt=""></a></li>
         </ul>
 </footer>
+<script src="js/scroll.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
 <script src="js/slider.js" defer></script>

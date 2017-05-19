@@ -25,12 +25,12 @@
         };
     }());
     document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('#anchor-to-portfolio').forEach((scrollLink) => {
+        document.querySelectorAll('.scroll').forEach((scrollLink) => {
             scrollLink.addEventListener('click', (event) => {
-                let anchor = scrollLink.getAttribute('id');
-                let anchorTo = document.querySelector('the-portfolio');
+                let anchor = scrollLink.getAttribute('href');
+                let anchorTo = document.querySelector(anchor);
                 event.preventDefault();
-                smoothScrollTo(anchorTo.offsetTop, 2000);
+                smoothScrollTo(anchorTo.offsetTop, 3000);
             });
         })
     });
