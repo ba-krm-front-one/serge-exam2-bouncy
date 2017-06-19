@@ -3,5 +3,5 @@ let flikty = new Flickity( '.karusel', {
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    autoPlay: 4000
+    autoPlay: 3300
 });
